@@ -9,7 +9,7 @@
     <meta name="keywords" content="Linux,Command,命令大全,Linux命令手册,inotifywait,异步文件系统监控机制">
     <title>inotifywait 命令，Linux inotifywait 命令详解：异步文件系统监控机制 -  Linux 命令搜索引擎</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=1689388409096">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=1697350260369">
     <script src="../js/dark-mode.min.js"></script>
     <script type="module" src="../js/github-corners.js"></script>
 </head>
@@ -46,7 +46,7 @@
 </span>
 
 
-<dark-mode style="position: fixed; top: 8px; left: 10px; z-index: 999;display: none;" dark="Dark" light="Light"></dark-mode><script>const t=document;const e="_dark_mode_theme_";const s="permanent";const o="colorschemechange";const i="permanentcolorscheme";const h="light";const r="dark";const n=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){const t=this.getAttribute(e);return t===null?"":t},set(t){this.setAttribute(e,t)}})};const c=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){return this.hasAttribute(e)},set(t){if(t){this.setAttribute(e,"")}else{this.removeAttribute(e)}}})};class a extends HTMLElement{static get observedAttributes(){return["mode",h,r,s]}LOCAL_NANE=e;constructor(){super();this.t()}connectedCallback(){n(this,"mode");n(this,r);n(this,h);c(this,s);const a=localStorage.getItem(e);if(a&&[h,r].includes(a)){this.mode=a;this.permanent=true}if(this.permanent&&!a){localStorage.setItem(e,this.mode)}const l=[h,r].includes(a);if(this.permanent&&a){this.o()}else{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){this.mode=r;this.o()}if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches){this.mode=h;this.o()}}if(!this.permanent&&!l){window.matchMedia("(prefers-color-scheme: light)").onchange=t=>{this.mode=t.matches?h:r;this.o()};window.matchMedia("(prefers-color-scheme: dark)").onchange=t=>{this.mode=t.matches?r:h;this.o()}}const d=new MutationObserver(((s,h)=>{this.mode=t.documentElement.dataset.colorMode;if(this.permanent&&l){localStorage.setItem(e,this.mode);this.i(i,{permanent:this.permanent})}this.h();this.i(o,{colorScheme:this.mode})}));d.observe(t.documentElement,{attributes:true});this.i(o,{colorScheme:this.mode});this.h()}attributeChangedCallback(t,s,o){if(t==="mode"&&s!==o&&[h,r].includes(o)){const t=localStorage.getItem(e);if(this.mode===t){this.mode=o;this.h();this.o()}else if(this.mode&&this.mode!==t){this.h();this.o()}}else if((t===h||t===r)&&s!==o){this.h()}if(t==="permanent"&&typeof this.permanent==="boolean"){this.permanent?localStorage.setItem(e,this.mode):localStorage.removeItem(e)}}o(){t.documentElement.setAttribute("data-color-mode",this.mode)}h(){this.icon.textContent=this.mode===h?"🌒":"🌞";this.text.textContent=this.mode===h?this.getAttribute(r):this.getAttribute(h)}t(){var s=this.attachShadow({mode:"open"});this.label=t.createElement("span");this.label.setAttribute("class","wrapper");this.label.onclick=()=>{this.mode=this.mode===h?r:h;if(this.permanent){localStorage.setItem(e,this.mode)}this.o();this.h()};s.appendChild(this.label);this.icon=t.createElement("span");this.label.appendChild(this.icon);this.text=t.createElement("span");this.label.appendChild(this.text);const o=`
+<dark-mode style="position: fixed; top: 8px; left: 10px; z-index: 999;;display: none;" dark="Dark" light="Light"></dark-mode><script>const t=document;const e="_dark_mode_theme_";const s="permanent";const o="colorschemechange";const i="permanentcolorscheme";const h="light";const r="dark";const n=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){const t=this.getAttribute(e);return t===null?"":t},set(t){this.setAttribute(e,t)}})};const c=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){return this.hasAttribute(e)},set(t){if(t){this.setAttribute(e,"")}else{this.removeAttribute(e)}}})};class a extends HTMLElement{static get observedAttributes(){return["mode",h,r,s]}LOCAL_NANE=e;constructor(){super();this.t()}connectedCallback(){n(this,"mode");n(this,r);n(this,h);c(this,s);const a=localStorage.getItem(e);if(a&&[h,r].includes(a)){this.mode=a;this.permanent=true}if(this.permanent&&!a){localStorage.setItem(e,this.mode)}const l=[h,r].includes(a);if(this.permanent&&a){this.o()}else{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){this.mode=r;this.o()}if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches){this.mode=h;this.o()}}if(!this.permanent&&!l){window.matchMedia("(prefers-color-scheme: light)").onchange=t=>{this.mode=t.matches?h:r;this.o()};window.matchMedia("(prefers-color-scheme: dark)").onchange=t=>{this.mode=t.matches?r:h;this.o()}}const d=new MutationObserver(((s,h)=>{this.mode=t.documentElement.dataset.colorMode;if(this.permanent&&l){localStorage.setItem(e,this.mode);this.i(i,{permanent:this.permanent})}this.h();this.i(o,{colorScheme:this.mode})}));d.observe(t.documentElement,{attributes:true});this.i(o,{colorScheme:this.mode});this.h()}attributeChangedCallback(t,s,o){if(t==="mode"&&s!==o&&[h,r].includes(o)){const t=localStorage.getItem(e);if(this.mode===t){this.mode=o;this.h();this.o()}else if(this.mode&&this.mode!==t){this.h();this.o()}}else if((t===h||t===r)&&s!==o){this.h()}if(t==="permanent"&&typeof this.permanent==="boolean"){this.permanent?localStorage.setItem(e,this.mode):localStorage.removeItem(e)}}o(){t.documentElement.setAttribute("data-color-mode",this.mode)}h(){this.icon.textContent=this.mode===h?"🌒":"🌞";this.text.textContent=this.mode===h?this.getAttribute(r):this.getAttribute(h)}t(){var s=this.attachShadow({mode:"open"});this.label=t.createElement("span");this.label.setAttribute("class","wrapper");this.label.onclick=()=>{this.mode=this.mode===h?r:h;if(this.permanent){localStorage.setItem(e,this.mode)}this.o();this.h()};s.appendChild(this.label);this.icon=t.createElement("span");this.label.appendChild(this.icon);this.text=t.createElement("span");this.label.appendChild(this.text);const o=`
 [data-color-mode*='dark'], [data-color-mode*='dark'] body {
   color-scheme: dark;
   --color-theme-bg: #0d1117;
@@ -255,48 +255,48 @@ path=$1
   <li><code>--format</code>指定文件变化的详细信息。</li>
 </ul>
 <h3 id="可监听的事件"><a class="anchor" aria-hidden="true" tabindex="-1" href="#可监听的事件"><span class="octicon octicon-link"></span></a>可监听的事件</h3>
-
-  
-    
-      
-      
-    
-  
-  
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-  
-<table><thead><tr><th>事件</th><th>描述</th></tr></thead><tbody><tr><td>access</td><td><strong>访问</strong> ，读取文件。</td></tr><tr><td>modify</td><td><strong>修改</strong> ，文件内容被修改。</td></tr><tr><td>attrib</td><td><strong>属性</strong> ，文件元数据被修改。</td></tr><tr><td>move</td><td><strong>移动</strong> ，对文件进行移动操作。</td></tr><tr><td>create</td><td><strong>创建</strong> ，生成新文件</td></tr><tr><td>open</td><td><strong>打开</strong> ，对文件进行打开操作。</td></tr><tr><td>close</td><td><strong>关闭</strong> ，对文件进行关闭操作。</td></tr><tr><td>delete</td><td><strong>删除</strong> ，文件被删除。</td></tr></tbody></table>
+<table>
+  <thead>
+    <tr>
+      <th>事件</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>access</td>
+      <td><strong>访问</strong> ，读取文件。</td>
+    </tr>
+    <tr>
+      <td>modify</td>
+      <td><strong>修改</strong> ，文件内容被修改。</td>
+    </tr>
+    <tr>
+      <td>attrib</td>
+      <td><strong>属性</strong> ，文件元数据被修改。</td>
+    </tr>
+    <tr>
+      <td>move</td>
+      <td><strong>移动</strong> ，对文件进行移动操作。</td>
+    </tr>
+    <tr>
+      <td>create</td>
+      <td><strong>创建</strong> ，生成新文件</td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td><strong>打开</strong> ，对文件进行打开操作。</td>
+    </tr>
+    <tr>
+      <td>close</td>
+      <td><strong>关闭</strong> ，对文件进行关闭操作。</td>
+    </tr>
+    <tr>
+      <td>delete</td>
+      <td><strong>删除</strong> ，文件被删除。</td>
+    </tr>
+  </tbody>
+</table>
 <style>markdown-style pre .copied {
   display: flex;
   position: absolute;
@@ -365,10 +365,10 @@ function copied(target, str) {
   收藏本站请使用 Ctrl+D 或者Command+d
   <br /> 共搜集到
   <span id="commands_info">
-    596
+    599
   </span> 个Linux命令，超过 <a href="../contributors.html">50+</a> 贡献者
 </div>
-<script type="text/javascript" src="../js/dt.js?v=1689388409097"></script>
-<script type="text/javascript" src="../js/index.js?v=1689388409097"></script>
+<script type="text/javascript" src="../js/dt.js?v=1697350260369"></script>
+<script type="text/javascript" src="../js/index.js?v=1697350260369"></script>
 </body>
 </html>
